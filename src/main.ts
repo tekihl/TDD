@@ -17,5 +17,10 @@ document.getElementById("todoForm")?.addEventListener("submit", (e) => {
   todos.push(newTodo);
 
   createHtml(todos);
+
+  if (theInput) {
+    (theInput as HTMLInputElement).value = "";
+  }
+
 });
 
