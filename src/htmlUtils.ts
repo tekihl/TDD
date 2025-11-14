@@ -7,7 +7,7 @@ export const createHtml = (todos: Todo[]) => {
         ul.innerHTML = "";
     }
 
-    todos.forEach((todo, i) => {
+    todos.forEach((todo) => {
         const li = document.createElement("li");
         li.innerHTML = todo.text;
         ul?.appendChild(li);
