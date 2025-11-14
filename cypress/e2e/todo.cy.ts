@@ -14,12 +14,7 @@ describe('Todo tests', () => {
     //assert
     cy.get("li").last().should("contain.text", text);
   });
-});
 
-describe('Todo tests', () => {
-  beforeEach(() => {
-    cy.visit("/")
-  })
   it('should add todo by pressing enter', () => {
     //assign
     const text = "test success";
@@ -32,4 +27,6 @@ describe('Todo tests', () => {
     //assert
     cy.get("li").last().should("contain.text", text);
   });
+
+  
 });
